@@ -19,3 +19,4 @@
 ```html
 <h1>Hola mundo</h1>
 ```
+> Esto es una cita o una nota destacada.
