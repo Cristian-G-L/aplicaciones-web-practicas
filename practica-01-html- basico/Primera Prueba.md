@@ -16,4 +16,6 @@
 
 ![Animal imagen](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzeNK8PPSgTUtltUzraAZR0hsFMvh8TtJrldG1Q5ySw&s=10)
 [Animal enlace](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyzeNK8PPSgTUtltUzraAZR0hsFMvh8TtJrldG1Q5ySw&s=10)
-[Memoria de la práctica 1](./practica-01-html-basico/memoria.md)
+```html
+<h1>Hola mundo</h1>
+``
