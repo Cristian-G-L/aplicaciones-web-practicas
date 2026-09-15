@@ -6,4 +6,4 @@ una vez dentro en el menu principal seleccionamos nueva y le ponemos el nombre q
 en iso image ponemos la iso q nos hemos descargado ademas desmarcaremos el recuadro que dice instalacion desatendida
 acontinuacion de memoria base ponemos 2048mb, 2 cpu y 25gb del espacio del disco y le damos a siguiente, con esto la maquina ya deberia de estar instalada
 
-![Error VirtualBox](./home/vespre/imatges/errorvirtualbox.png)
+![Error VirtualBox](./home/vespre/Imatges/errorvirtualbox.png)
