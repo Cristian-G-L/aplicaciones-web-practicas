@@ -1,3 +1,5 @@
+#Instalacion Ubuntu Server
+
 Primero descargamos la ISO desde la pagina web oficial 
 una vez la tengamos ya instalada abrimos el virtualbox
 una vez dentro en el menu principal seleccionamos nueva y le ponemos el nombre que queramos
