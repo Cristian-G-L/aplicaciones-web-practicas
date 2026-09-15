@@ -1,4 +1,4 @@
-#Instalacion Ubuntu Server
+# Instalacion Ubuntu Server
 
 Primero descargamos la ISO desde la pagina web oficial 
 una vez la tengamos ya instalada abrimos el virtualbox
