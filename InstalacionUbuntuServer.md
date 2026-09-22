@@ -16,4 +16,9 @@ acontinuacion procedemos con la instalacion de Ubuntu server, nos preguntara por
 
 EXPLICAR ADAPTADORES Y NETPLAN CONFIGURACION
 
+para conectar las dos maquinas y que tengan salida a internet, vamos a la maquina virtual que hemos usado y le damos a configuracion, ahora nos vamos al apartado de red y en adaptadores el primer adaptador lo ponemos en red NAT y el adaptador 2 no nos dejara, por lo que arriba a la izquierda nos saldra una opcion que se llama archivo luego le damos a herramientas y a red, una vez dentro le damos a crear y se nos creara una red anfitrion, ahi configuramos nuestra ip, la que queriamos poner y desactivamos el DHCP una vez hecho volvemos a la pestaña de los adaptadores y en el 2 adaptador lo ponemos como solo anfitrion e iniciamos la maquina, una vez dentro hay que configurar el netplan que es para poner la ip en la maquina virtual, para entrar en el archivo netplan ponemos este coomando: ls /etc/netplan y sudo nano /etc/netplan/el archivo que nos ha salido con el ls x.ymal y entramos, acontinuacion hay que ponerlo de una forma concreta como la de esta imagen: "imagen de la configuracion del netplan"
+
+
+
+
 
