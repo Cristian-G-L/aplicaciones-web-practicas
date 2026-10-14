@@ -44,7 +44,7 @@ la configuracion que tendriamos que poner se veria asi:
 Paso 5 · Activar el sitio y reiniciar Apache
 
 
-para activar el sitio y reiuniciar apache lo haremos con esta serie de comandos: sudo a2ensite smr.conf
+para activar el sitio y reiniciar apache lo haremos con esta serie de comandos: sudo a2ensite smr.conf
 sudo a2dissite 000-default.conf
 sudo apachectl configtest
 sudo systemctl restart apache2
