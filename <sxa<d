@@ -15,7 +15,7 @@ sudo mkdir -p /var/www/smr/web /var/www/smr/intranet
 
 Este comando nos creará las dos carpetas que necesitamos en la ruta que le hemos puesto. Ahora, una vez hayamos creado las dos carpetas, entraremos mediante el comando `cd` y crearemos los archivos HTML:
 
-* **En la carpeta web:**
+* **En la carpeta web:**dd
   ```bash
   cd /var/www/smr/web
   sudo touch index.html
