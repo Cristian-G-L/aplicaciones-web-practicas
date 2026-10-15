@@ -1,56 +1,71 @@
-# 🌐 Práctica: Configuración de Sitio Web y Intranet con Autenticación en Apache2
+# 🌐 Práctica: Configuración de Servidor Web Apache2, VirtualHosts y Autenticación Básica
 
 **Asignatura:** Aplicaciones Web · 2º SMR  
-**Objetivo:** El objetivo de esta práctica es conectarse mediante nombre a las dos webs que crearemos desde otra máquina, una será pública y la otra nos pedirá el usuario y contraseña.
+**Objetivo:** Desplegar y configurar un servidor web Apache2 en Ubuntu Server, implementando VirtualHosts basados en nombre y puertos, gestión de directorios protegidos por contraseña (Intranet) y la simulación de resolución DNS local.
 
 ---
 
-## 🛠️ Paso 1 · Crear las carpetas y las páginas
+## 📌 1. Qué es Apache2
+Apache HTTP Server es uno de los servidores web más populares y utilizados a nivel mundial. Es un software libre que se encarga de procesar las peticiones HTTP realizadas por los navegadores de los clientes (usuarios) y devolverles los recursos solicitados, tales como páginas HTML, imágenes y otros ficheros estáticos o dinámicos.
 
-Para crear las carpetas y las páginas usaremos estos comandos:
+---
+
+## ⚙️ 2. Instalación de Apache2 y Utilidades
+Para poner en marcha el servidor web en nuestro entorno Linux, actualizamos los repositorios e instalamos el paquete principal junto con las herramientas de utilidad (como `htpasswd`):
+
+```bash
+sudo apt update
+sudo apt install apache2 apache2-utils -y
+```
+
+**Ficheros y directorios clave de Apache2:**
+- `/etc/apache2/ports.conf`: Archivo donde se configuran los puertos de escucha del servidor (por defecto el puerto 80).   
+- `/etc/apache2/sites-available/`: Directorio que almacena los ficheros de configuración de los sitios web disponibles, aunque no estén activados todavía.   
+- `/etc/apache2/sites-enabled/`: Directorio que contiene enlaces simbólicos hacia los ficheros de *sites-available* que se encuentran activos y operativos en el servidor.   
+
+---
+
+## 📁 3. Creación de Directorios y Estructura Web
+Para alojar los contenidos de nuestros sitios web, creamos la estructura de carpetas necesaria mediante el comando `mkdir` con la opción `-p` para subdirectorios:   
 
 ```bash
 sudo mkdir -p /var/www/smr/web /var/www/smr/intranet
 ```
 
-Este comando nos creará las dos carpetas que necesitamos en la ruta que le hemos puesto. Ahora, una vez hayamos creado las dos carpetas, entraremos mediante el comando `cd` y crearemos los archivos HTML:
+Una vez creadas, procedemos a inicializar los archivos HTML principales para cada sitio:   
 
-* **En la carpeta web:**
+- **Para la web pública:**
   ```bash
   cd /var/www/smr/web
   sudo touch index.html
   ```
-* **En la carpeta intranet:**
+
+- **Para la intranet privada:**
   ```bash
   cd /var/www/smr/intranet
   sudo touch intranet.html
   ```
 
-Estos archivos serán los que necesitaremos para modificar nuestra página web.
-
 ---
 
-## 🔐 Paso 2 · Crear el usuario de la intranet
-
-Para crear el usuario y ponerle una contraseña usaremos este comando:
+## 🔑 4. Configuración del Directorio Protegido (Auth-Basic)
+Para restringir el acceso a la intranet, creamos un archivo cifrado de credenciales de usuario utilizando la utilidad `htpasswd`:   
 
 ```bash
 sudo htpasswd -c /etc/apache2/.htpasswd alumno
 ```
-
-La contraseña pondremos la que queramos.
+*(Se introducirá y confirmará la contraseña deseada para el usuario alumno)*
 
 ---
 
-## 👂 Paso 3 · Decirle a Apache que escuche en el puerto 9999
-
-Para decirle que escuche esos dos puertos hay que entrar en el archivo `ports.conf` mediante este comando:
+## 👂 5. Configuración de Puertos en Apache (`ports.conf`)
+Para permitir que Apache escuche peticiones tanto por el puerto estándar HTTP como por un puerto alternativo para la intranet, modificamos el fichero de puertos:
 
 ```bash
 sudo nano /etc/apache2/ports.conf
 ```
 
-Una vez dentro le pondremos los dos `Listen` y el puerto que queramos que escuchen, en nuestro caso el `80` y el `9999`:
+Aseguramos que incluya las siguientes líneas de escucha:
 
 ```apache
 Listen 80
@@ -59,15 +74,16 @@ Listen 9999
 
 ---
 
-## 📄 Paso 4 · Crear el virtualhost
+## 📄 6. Configuración del VirtualHost (Por Nombre y Puerto)
+Un VirtualHost es la funcionalidad de Apache que permite alojar y gestionar múltiples sitios web independientes dentro de un mismo servidor físico o virtual.
 
-Ahora le indicaremos a Apache dos que el fichero `smr.conf` lo queremos modificar para que nuestra web funcione. Para hacer esto utilizaremos este comando:
+Editamos el archivo de configuración unificado para ambos sitios:   
 
 ```bash
 sudo nano /etc/apache2/sites-available/smr.conf
 ```
 
-Una vez dentro tenemos dos maneras de hacerlo, una es creando un fichero de configuración para cada web o podemos usar un solo fichero para las dos webs. En este caso usaremos un fichero para las dos webs; la configuración que tendríamos que poner se vería así:
+Añadimos la siguiente estructura de configuración:   
 
 ```apache
 <VirtualHost *:80>
@@ -91,9 +107,8 @@ Una vez dentro tenemos dos maneras de hacerlo, una es creando un fichero de conf
 
 ---
 
-## 🔄 Paso 5 · Activar el sitio y reiniciar Apache
-
-Para activar el sitio y reiniciar Apache lo haremos con esta serie de comandos:
+## 🔄 7. Activación del Sitio y Gestión del Servicio
+Para habilitar la configuración del VirtualHost, desactivar el sitio por defecto, comprobar errores de sintaxis y reiniciar el servicio, ejecutamos la siguiente secuencia de comandos:   
 
 ```bash
 sudo a2ensite smr.conf
@@ -104,11 +119,23 @@ sudo systemctl restart apache2
 
 ---
 
-## 🧪 Paso 6 · Comprobar que funciona
+## 🌐 8. Modificación del Fichero hosts (Simulación DNS)
+Como no disponemos de un servidor DNS dedicado en nuestra red local para resolver el dominio `www.smr.com`, debemos falsear la resolución de nombres directamente en el sistema operativo de la máquina cliente (en su archivo `hosts`):   
 
-Ahora, para comprobar que todo funciona, entraremos desde otra máquina virtual y en el buscador buscaremos nuestras webs:
+```bash
+sudo nano /etc/hosts
+```
 
-1. **Primera web (Pública):** Lo haremos con `http://www.smr.com` y nos debería de salir la web del puerto 80.
-2. **Segunda web (Intranet):** Si buscamos `http://www.smr.com:9999` nos debería de salir la web de intranet, que nos pedirá el usuario y la contraseña para entrar.
+Añadimos la línea que vincula la IP estática del servidor web con el nombre de dominio:   
 
-Y eso sería todo.
+```text
+192.168.56.10   www.smr.com
+```
+
+---
+
+## 🧪 9. Comprobación y Pruebas de Funcionamiento
+Desde el navegador web de la máquina cliente conectada en la red local, realizamos las comprobaciones finales:   
+
+1. **Sitio Web Público:** Al navegar a `http://www.smr.com`, el servidor responde sirviendo la página principal alojada en el puerto 80.   
+2. **Intranet Protegida:** Al navegar a `http://www.smr.com:9999`, el servidor despliega una ventana emergente de autenticación HTTP Basic solicitando las credenciales (`alumno` y su respectiva contraseña) para conceder el acceso al contenido de la intranet.
