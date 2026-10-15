@@ -9,5 +9,5 @@
 ### Módulo / Bloque: Ubuntu Server
 * [Práctica de Ubuntu Server](UbuntuServer/InstalaciónUbuntuServer.md)
 
-### Otras Prácticas
+### Módulo / Bloque: MariaDB
 * [Práctica de MariaDB](practica-mariadb.md)
