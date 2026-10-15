@@ -1,8 +1,6 @@
 
 # Aplicaciones Web - Prácticas
 
-Repositorio que recopila las memorias y ejercicios prácticos de la asignatura.
-
 ## 📋 Índice de Prácticas
 
 ### Módulo / Bloque: Apache
