@@ -10,4 +10,4 @@
 * [Práctica de Ubuntu Server](UbuntuServer/InstalaciónUbuntuServer.md)
 
 ### Módulo / Bloque: MariaDB
-* [Práctica de MariaDB](practica-mariadb.md)
+* [Práctica de MariaDB](MariaDB/PracticaMariaDB.md)
