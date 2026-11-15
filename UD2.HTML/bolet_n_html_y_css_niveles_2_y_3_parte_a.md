@@ -129,10 +129,10 @@
 
 | N.º | Afirmación | Resultado | Corrección (si es falsa) |
 | :---: | :--- | :---: | :--- |
-| **1** | *"Para crear un bookmark se añade el atributo `id` a una etiqueta de la página."* | ✅ **V** | — |
-| **2** | *"`<a href="#S4">` salta al elemento con `id="S4"` de la misma página."* | ✅ **V** | — |
+| **1** | *"Para crear un bookmark se añade el atributo `id` a una etiqueta de la página."* | ✅ **V** |  |
+| **2** | *"`<a href="#S4">` salta al elemento con `id="S4"` de la misma página."* | ✅ **V** | |
 | **3** | *"Dos elementos de la misma página pueden tener el mismo `id`."* | ❌ **F** | Cada `id` debe ser único en toda la página; no se puede repetir en dos elementos distintos. |
-| **4** | *"`<a href="guia.html#wifi">` abre `guia.html` directamente en la sección con ese `id`."* | ✅ **V** | — |
+| **4** | *"`<a href="guia.html#wifi">` abre `guia.html` directamente en la sección con ese `id`."* | ✅ **V** | |
 | **5** | *"Los identificadores `Precios` y `precios` son el mismo."* | ❌ **F** | Son distintos porque HTML diferencia entre letras mayúsculas y minúsculas. |
 
 ---
