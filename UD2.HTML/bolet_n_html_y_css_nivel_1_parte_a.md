@@ -42,7 +42,7 @@
 
 #### 🐛 Errores detectados (5 fallos):
 1. **Falta de cierre:** No se ha cerrado la etiqueta `</head>`.
-2. **Estructura incompleta:** Faltan `<!DOCTYPE html>`, `<meta charset="utf-8">` y `<meta name="author">` (obligatorios según las normas del boletín).
+2. **Estructura incompleta:** Faltan `<!DOCTYPE html>`, `<meta charset="utf-8">` y `<meta name="author">`
 3. **Título sin cerrar:** Falta la etiqueta de cierre `</title>`.
 4. **Encabezado discordante:** Se abre con `<h1>` pero se intenta cerrar con `</h2>`.
 5. **Mala anidación (*solapamiento*):** Se abre `<b>` dentro de `<p>`, pero se cierra primero `</p>` y luego `</b>`. La etiqueta que se abre última debe cerrarse primera.
