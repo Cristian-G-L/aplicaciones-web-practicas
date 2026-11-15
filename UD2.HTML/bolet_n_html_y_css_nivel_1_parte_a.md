@@ -49,7 +49,7 @@
 
 #### ✨ Código corregido:
 ```html
-<!DOCTYPE html>
+<!DOCTYPE html>z
 <html lang="es">
 <head>
     <meta charset="utf-8">
