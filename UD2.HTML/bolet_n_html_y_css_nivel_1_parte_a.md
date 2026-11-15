@@ -94,7 +94,7 @@
 
 #### 🐛 Errores detectados:
 1. **Sintaxis del comentario:** Los comentarios en HTML requieren dos guiones tanto al abrir como al cerrar (`<!-- ... -->`), no uno solo (`<!- ... ->`).
-2. **Etiquetas cruzadas:** En `<strong><em>...</strong></em>` las etiquetas no respetan el orden de anidamiento. Como `<em>` se abrió después de `<strong>`, debe cerrarse antes.
+2. **Etiquetas cruzadas:** En `<strong><em>...</strong></em>` las etiquetas no respetan el orden. Como `<em>` se abrió después de `<strong>`, debe cerrarse antes.
 
 #### ✨ Código corregido:
 ```html
