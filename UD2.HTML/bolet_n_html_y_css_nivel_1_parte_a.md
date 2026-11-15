@@ -11,16 +11,16 @@
 
 | N.º | Afirmación | Resultado | Corrección / Justificación |
 | :---: | :--- | :---: | :--- |
-| **1** | *"HTML es un lenguaje de programación como Python: sirve para hacer cálculos y tomar decisiones."* | ❌ **F** | HTML es un lenguaje de **marcas** (de estructuración), no de programación; sirve para estructurar el contenido de la web, no para hacer cálculos ni tomar decisiones. |
+| **1** | *"HTML es un lenguaje de programación como Python: sirve para hacer cálculos y tomar decisiones."* | ❌ **F** | HTML es un lenguaje para estructurar páginas, no de programación; no sirve para hacer cálculos ni tomar decisiones. |
 | **2** | *"La etiqueta `<br>` no necesita etiqueta de cierre."* | ✅ **V** |  |
 | **3** | *"El valor de un atributo siempre se escribe entre comillas."* | ✅ **V** | |
-| **4** | *"Los atributos de una etiqueta se escriben en la etiqueta de cierre."* | ❌ **F** | Los atributos de una etiqueta se escriben **siempre en la etiqueta de apertura**. |
+| **4** | *"Los atributos de una etiqueta se escriben en la etiqueta de cierre."* | ❌ **F** |Los atributos se escriben siempre en la etiqueta de apertura, nunca en la de cierre. |
 | **5** | *"El texto de `<title>` aparece en la pestaña del navegador."* | ✅ **V** |  |
 | **6** | *"`<strong>` y `<b>` se visualizan igual."* | ✅ **V** |  |
-| **7** | *"Todo lo que escribimos dentro de `<head>` se ve en la página."* | ❌ **F** | El contenido de `<head>` es **metainformación** para el navegador y buscadores (título, codificación, estilos); no se renderiza dentro del cuerpo visible de la página. |
-| **8** | *"La etiqueta `<hr>` se cierra con `</hr>`."* | ❌ **F** | La etiqueta `<hr>` es un elemento vacío (crea una línea horizontal separadora) y **no tiene etiqueta de cierre**. |
-| **9** | *"Un comentario HTML (`<!-- ... -->`) se muestra en pantalla como una nota gris."* | ❌ **F** | Un comentario HTML **no se muestra en pantalla** en absoluto; solo es visible al inspeccionar el código fuente. |
-| **10** | *"`<span>` crea un bloque de texto que siempre empieza en una línea nueva."* | ❌ **F** | `<span>` es un contenedor de tipo **línea (*inline*)**, por lo que fluye junto al texto sin provocar saltos de línea. |
+| **7** | *"Todo lo que escribimos dentro de `<head>` se ve en la página."* | ❌ **F** | Lo que escribes en <head> es información para el navegador (como el título o los estilos), no se ve directamente en la página |
+| **8** | *"La etiqueta `<hr>` se cierra con `</hr>`."* | ❌ **F** | La etiqueta <hr> es una línea separadora y no se cierra con </hr>. |
+| **9** | *"Un comentario HTML (`<!-- ... -->`) se muestra en pantalla como una nota gris."* | ❌ **F** | Los comentarios no se ven en la pantalla; solo se pueden leer si miras el código fuente. |
+| **10** | *"`<span>` crea un bloque de texto que siempre empieza en una línea nueva."* | ❌ **F** | <span> va en la misma línea del texto. El que hace que salte a una línea nueva es un elemento de bloque. |
 
 ---
 
