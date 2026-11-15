@@ -38,12 +38,12 @@
 
 ### 🧭 A3. ¿Absoluto o relativo?
 
-1. `https://www.w3.org/` $\rightarrow$ **Absoluto** (lleva la dirección web completa con `https://`).
-2. `paginas/contacto.html` $\rightarrow$ **Relativo** (busca dentro de una carpeta local).
-3. `/css/default.asp` $\rightarrow$ **Relativo** (no lleva dominio ni `http`, parte de la raíz del sitio).
-4. `https://www.google.com/` $\rightarrow$ **Absoluto** (lleva la dirección web completa).
-5. `./apuntes.pdf` $\rightarrow$ **Relativo** (busca el archivo en la misma carpeta actual).
-6. `imagenes/logo.png` $\rightarrow$ **Relativo** (busca dentro de la carpeta `imagenes`).
+1. `https://www.w3.org/` $\rightarrow$ **Absoluto** 
+2. `paginas/contacto.html` $\rightarrow$ **Relativo**
+3. `/css/default.asp` $\rightarrow$ **Relativo** 
+4. `https://www.google.com/` $\rightarrow$ **Absoluto** 
+5. `./apuntes.pdf` $\rightarrow$ **Relativo**
+6. `imagenes/logo.png` $\rightarrow$ **Relativo** 
 
 ---
 
