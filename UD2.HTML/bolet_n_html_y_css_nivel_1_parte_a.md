@@ -44,7 +44,7 @@
 1. **Falta de cierre:** No se ha cerrado la etiqueta `</head>`.
 2. **Estructura incompleta:** Faltan `<!DOCTYPE html>`, `<meta charset="utf-8">` y `<meta name="author">`
 3. **Título sin cerrar:** Falta la etiqueta de cierre `</title>`.
-4. **Encabezado discordante:** El título grande empieza con ´<h1>` pero se cierra mal con ´</h2>`
+4. **Encabezado discordante:** El título grande empieza con `<h1>` pero se cierra mal con `</h2>`
 5. **Etiquetas mal puestas:** Se abre `<b>` dentro de `<p>`, pero se cierra primero `</p>` y luego `</b>`. La etiqueta que se abre última debe cerrarse primera.
 
 #### ✨ Código corregido:
