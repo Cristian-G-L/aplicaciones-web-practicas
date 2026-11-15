@@ -117,10 +117,3 @@ Si abrimos el archivo en el navegador, el resultado visual de arriba abajo será
 >
 > #### Próximo partido
 > Sábado a las 18:00
-
-**Desglose elemento a elemento:**
-1. Un encabezado grande y en negrita (`<h1>`) con el texto *"Resumen de la jornada"*.
-2. Un párrafo donde la primera frase (*"Ha ganado el equipo local."*) queda arriba y, justo debajo sin dejar espacio extra de párrafo gracias al `<br>`, aparece *"El rival se despide del torneo."*
-3. Una línea horizontal (`<hr>`) que divide visualmente el contenido de lado a lado.
-4. Un subtítulo de cuarto nivel (`<h4>`) más pequeño con el texto *"Próximo partido"*.
-5. Un párrafo normal con la hora: *"Sábado a las 18:00"*.
