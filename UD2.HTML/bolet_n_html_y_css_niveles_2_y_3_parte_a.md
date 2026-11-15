@@ -151,8 +151,8 @@
 ### 💭 A3. Reflexiona
 
 1. **¿En qué tipo de páginas resulta más útil un índice con bookmarks?**  
-   En páginas muy largas y con mucho texto (como manuales, tutoriales, artículos extensos o preguntas frecuentes), para no tener que bajar todo el rato con la rueda del ratón.
+   En páginas muy largas y con mucho texto, para no tener que bajar todo el rato con la rueda del ratón.
 2. **Al final de cada sección habrá un enlace de vuelta al índice. ¿A qué `id` debe apuntar y dónde tienes que ponerlo?**  
    Debe apuntar a un identificador que esté arriba del todo de la página (por ejemplo, `href="#inicio"` o `href="#indice"`), poniendo ese `id="inicio"` en el título principal (`<h1>`) o en el contenedor del índice.
 3. **¿Qué pasaría si dos secciones tuvieran el mismo `id`?**  
-   El enlace se liaría y siempre saltaría solo al **primer** elemento que encuentre con ese nombre, ignorando el segundo (además de dar error si validas el código).
+   El enlace se liaría y siempre saltaría solo al **primer** elemento que encuentre con ese nombre, ignorando el segundo.
