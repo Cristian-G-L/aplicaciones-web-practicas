@@ -69,7 +69,6 @@
 4. **Comillas en el enlace:** El valor de `href` (`https://www.wikipedia.org`) debe ir entre comillas dobles.
 5. **Enlace sin cerrar:** Falta cerrar la etiqueta del enlace con `</a>` al final del texto.
 
-*(Nota: También falta la etiqueta `<meta name="author">` obligatoria según las normas generales del boletín).*
 
 #### ✨ Código corregido:
 ```html
