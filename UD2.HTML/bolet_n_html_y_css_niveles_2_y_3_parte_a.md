@@ -12,11 +12,11 @@
 | N.º | Afirmación | Resultado | Corrección (si es falsa) |
 | :---: | :--- | :---: | :--- |
 | **1** | *"La etiqueta `<img>` se cierra con `</img>`."* | ❌ **F** | La etiqueta `<img>` no tiene etiqueta de cierre. |
-| **2** | *"El atributo `alt` muestra un texto si la imagen no se puede cargar."* | ✅ **V** | — |
-| **3** | *"Para dar ancho y alto a una imagen se recomienda usar `style` en lugar de `width` y `height`."* | ✅ **V** | — |
-| **4** | *"La propiedad `float` permite que una imagen flote a la izquierda o a la derecha del texto, o que no flote."* | ✅ **V** | — |
+| **2** | *"El atributo `alt` muestra un texto si la imagen no se puede cargar."* | ✅ **V** |  |
+| **3** | *"Para dar ancho y alto a una imagen se recomienda usar `style` en lugar de `width` y `height`."* | ✅ **V** |  |
+| **4** | *"La propiedad `float` permite que una imagen flote a la izquierda o a la derecha del texto, o que no flote."* | ✅ **V** | |
 | **5** | *"El rótulo de un enlace solo puede ser un texto."* | ❌ **F** | El rótulo de un enlace también puede ser una imagen (o una imagen junto a un texto). |
-| **6** | *"`target="_blank"` hace que el enlace se abra en una ventana (pestaña) nueva."* | ✅ **V** | — |
+| **6** | *"`target="_blank"` hace que el enlace se abra en una ventana (pestaña) nueva."* | ✅ **V** | |
 | **7** | *"Por defecto, un enlace ya visitado se ve azul y uno por visitar, morado."* | ❌ **F** | Es justo al revés: por defecto, un enlace **por visitar se ve azul** y uno **ya visitado se ve morado**. |
 | **8** | *"Un enlace relativo escribe la URL completa, incluido el dominio."* | ❌ **F** | Ese es un enlace absoluto. El enlace relativo solo pone la ruta desde la carpeta donde está tu archivo (por ejemplo, `imagenes/foto.jpg`). |
 
