@@ -2,6 +2,11 @@
 
 # 🐧 Práctica: Instalación y Configuración de Ubuntu Server y Acceso SSH
 
+> **Unidad Didáctica 1** · Configutacion Ubuntu Server
+> **Módulo:** Aplicaciones Web · 2.º SMR  
+> **Alumno/a:** *Cristian García Lázaro*
+
+
 <p>
   <b>Asignatura:</b> Aplicaciones Web · 2º SMR<br>
   <b>Objetivo:</b> Desplegar y configurar un servidor Ubuntu Server sin interfaz gráfica en VirtualBox, estructurando el almacenamiento, estableciendo una red con doble adaptador (NAT y Host-Only), configurando una IP estática mediante Netplan y habilitando el acceso remoto seguro por SSH.
