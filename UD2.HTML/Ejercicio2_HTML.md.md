@@ -1,7 +1,7 @@
 # 🌐 Boletín de HTML y CSS básico: de cero a página completa
 > **Unidad Didáctica 2 · Parte A (Comprobación y reflexión)**  
 > **Módulo:** Aplicaciones Web · 2.º SMR  
-> **Alumno/a:** *[Tu Nombre]* · **Fecha:** *[Fecha]*
+> **Alumno/a:** *Cristian García Lázaro* · **Fecha:** *17/11/26*
 
 ---
 
