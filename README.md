@@ -13,4 +13,4 @@
 * [Práctica de MariaDB](MariaDB/PracticaMariaDB.md)
 
 ### Módulo / Bloque: HTML
-* [Práctica de MariaDB](UD2.HTML/)
+* [Práctica de HTML](UD2.HTML/)
