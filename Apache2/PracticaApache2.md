@@ -1,6 +1,10 @@
 # 🌐 Práctica: Configuración de Servidor Web Apache2, VirtualHosts y Autenticación Básica
 
 **Asignatura:** Aplicaciones Web · 2º SMR  
+> **Unidad Didáctica 1 · Configuración Apache2*  
+> **Módulo:** Aplicaciones Web · 2.º SMR  
+> **Alumno/a:** *Cristian García Lázaro*
+
 **Objetivo:** Desplegar y configurar un servidor web Apache2 en Ubuntu Server, implementando VirtualHosts basados en nombre y puertos, gestión de directorios protegidos por contraseña (Intranet) y la simulación de resolución DNS local.
 
 ---
