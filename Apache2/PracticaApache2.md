@@ -1,7 +1,6 @@
 # 🌐 Práctica: Configuración de Servidor Web Apache2, VirtualHosts y Autenticación Básica
 
-**Asignatura:** Aplicaciones Web · 2º SMR  
-> **Unidad Didáctica 1 · Configuración Apache2*  
+> **Unidad Didáctica 1 · Configuración Apache2**  
 > **Módulo:** Aplicaciones Web · 2.º SMR  
 > **Alumno/a:** *Cristian García Lázaro*
 
