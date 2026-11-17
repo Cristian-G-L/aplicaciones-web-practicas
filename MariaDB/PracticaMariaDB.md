@@ -1,7 +1,7 @@
 # 🐬 Guía de Instalación: MariaDB
 
 ---
-> **Unidad Didáctica 1** · Configuración Apache2  
+> **Unidad Didáctica 1** · Instalación MariaDB  
 > **Módulo:** Aplicaciones Web · 2.º SMR  
 > **Alumno/a:** *Cristian García Lázaro*
 
